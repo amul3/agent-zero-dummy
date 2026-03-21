@@ -549,6 +549,14 @@ A0_SET_agent_profile=custom
 A0_SET_agent_memory_subdir=production
 ```
 
+### Low-CPU local Ollama preset
+
+If you're running Agent Zero with local Ollama models on limited CPU, you can start from:
+
+- `conf/local_ollama_low_cpu.env.example`
+
+This preset reduces context sizes, lowers memory recall/search pressure, and narrows workdir tree limits for faster local responsiveness.
+
 **Docker usage:**
 
 When running Docker, you can pass these as environment variables:
